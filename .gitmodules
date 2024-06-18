@@ -1,0 +1,3 @@
+[submodule "BBT/deps/SDL"]
+	path = BBT/deps/SDL
+	url = https://github.com/libsdl-org/SDL
