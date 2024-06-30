@@ -22,3 +22,4 @@ add_executable(BBT ${SOURCES})
 target_link_libraries(BBT PRIVATE SDL3::SDL3 opengl32.lib shell32.lib)
 
 # Add other dependencies similarly
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DDEBUG")

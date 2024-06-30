@@ -4,11 +4,18 @@
 #include "utils/imgui/imgui_impl_sdl3.h"
 #include "utils/imgui/imgui_impl_opengl3.h"
 #include "SDL3/SDL_opengl.h"
+#include "log.h"
+#include "bbt_assert.h"
 
 int main()
 {
 
     SDL_Init(SDL_INIT_VIDEO);
+
+    SDL_SetLogPriority(SDL_LOG_CATEGORY_CUSTOM, SDL_LogPriority::SDL_LOG_PRIORITY_VERBOSE);
+
+    LOG_MACRO(bbt::logLevel::trace, "Usuario no registrado ID:{}",1);
+    BBT_ASSERT(false, "Error");
 
     const char* glsl_version = "#version 430";
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG); // Always required on Mac
