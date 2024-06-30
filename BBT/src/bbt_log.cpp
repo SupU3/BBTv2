@@ -1,4 +1,4 @@
-#include "log.h"
+#include "bbt_log.h"
 #include "SDL3/SDL_log.h"
 
 void bbt::logger::log(logLevel logLvL, const std::string& msg)
