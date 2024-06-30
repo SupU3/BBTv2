@@ -19,6 +19,6 @@ add_executable(BBT ${SOURCES})
 
 # Link dependencies (example with Boost)
 # find_package(Boost REQUIRED)
-target_link_libraries(BBT PRIVATE SDL3::SDL3)
+target_link_libraries(BBT PRIVATE SDL3::SDL3 opengl32.lib shell32.lib)
 
 # Add other dependencies similarly
