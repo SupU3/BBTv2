@@ -1,8 +1,11 @@
 # **Client**
 
-- [ ] **UI Renderer** 
+HIGH PRIO
 - [x] **Debug Util**
-- [x] **Event Sistem**
+- [x] **Event System**
+
+LOW PRIO
+- [ ] **UI Renderer** 
 - [ ] **Tiny Profiler**
 
 # **Server**
