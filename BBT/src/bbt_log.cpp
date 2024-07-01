@@ -4,6 +4,6 @@ void bbt::logger::init(int argc, char** argv)
 {
 
 	loguru::init(argc, argv);
-	loguru::add_file("bbt_everything.log", loguru::Append, loguru::Verbosity_MAX);
+	loguru::add_file("bbt_everything.log", loguru::Truncate, loguru::Verbosity_MAX);
 
 }
