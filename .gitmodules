@@ -1,3 +1,6 @@
 [submodule "BBT/deps/SDL"]
 	path = BBT/deps/SDL
 	url = https://github.com/libsdl-org/SDL
+[submodule "BBT/deps/loguru"]
+	path = BBT/deps/loguru
+	url = https://github.com/emilk/loguru.git
