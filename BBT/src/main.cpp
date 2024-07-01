@@ -116,8 +116,6 @@ int main(int argc, char** argv)
 
     }
 
-    printf("Pichita");
-
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplSDL3_Shutdown();
     ImGui::DestroyContext();
