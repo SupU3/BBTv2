@@ -7,8 +7,9 @@
 #include "bbt_log.h"
 #include "bbt_assert.h"
 #include "bbt_event_system.h"
+#include "loguru.hpp"
 
-int main()
+int main(int argc, char** argv)
 {
     std::cout << "\033[36m"; // Establecer el color azul
     std::cout << R"(
@@ -25,6 +26,8 @@ int main()
     ===============================================================================================================
     )" << std::endl;
     std::cout << "\033[0m"; // Restablecer el color
+
+    bbt::logger::init(argc, argv);
 
     SDL_Init(SDL_INIT_VIDEO);
 

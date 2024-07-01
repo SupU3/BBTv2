@@ -2,7 +2,7 @@
 
 - [ ] **UI Renderer** 
 - [x] **Debug Util**
-- [ ] **Event Sistem**
+- [x] **Event Sistem**
 - [ ] **Tiny Profiler**
 
 # **Server**

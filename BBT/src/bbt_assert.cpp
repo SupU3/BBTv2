@@ -5,13 +5,13 @@ void internarAssertImplemmentation(const char* expresion, const char* desc, cons
 {
 
     // DO THING...
-    LOG_MACRO(bbt::logLevel::error,
+    LOG_F(ERROR,
         "\n  -+-+-+-+-+-+-+-+-+-+-+-+-+-\n"
-        "  [expr]:        {}\n"
-        "  [file]:        {}\n"
-        "  [function]:    {}\n"
-        "  [line]:        {}\n"
-        "  [description]: {}\n"
+        "  [expr]:        %s\n"
+        "  [file]:        %s\n"
+        "  [function]:    %s\n"
+        "  [line]:        %d\n"
+        "  [description]: %s\n"
         "  -+-+-+-+-+-+-+-+-+-+-+-+-+-", expresion, file, function, line, desc);
 
 }

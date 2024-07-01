@@ -13,13 +13,14 @@ include_directories(src)
 
 
 add_subdirectory(deps/SDL)
+add_subdirectory(deps/loguru)
 
 # Add the executable
 add_executable(BBT ${SOURCES})
 
 # Link dependencies (example with Boost)
 # find_package(Boost REQUIRED)
-target_link_libraries(BBT PRIVATE SDL3::SDL3 opengl32.lib shell32.lib)
+target_link_libraries(BBT PRIVATE SDL3::SDL3 opengl32.lib shell32.lib loguru::loguru)
 
 # Add other dependencies similarly
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DDEBUG")

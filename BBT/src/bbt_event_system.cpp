@@ -29,7 +29,7 @@ void bbt::eventSystem::Subscribe(int eventId, eventFunc inFunc, const char* meta
 
     gObserversMap[eventId].push_back({ inFunc, metaName });
 
-    LOG_MACRO( bbt::logLevel::trace, "Subscribed: {} -> Event ID: {}", metaName, eventId );
+    LOG_F( INFO, "Subscribed: %s -> Event ID: %d", metaName, eventId);
 
 }
 
@@ -40,11 +40,12 @@ void bbt::eventSystem::Broadcast(int eventId, const eventParams& eventParams)
     if(!gObserversMap.contains(eventId))
         return;
 
-    LOG_MACRO( bbt::logLevel::trace, "Broadcast even with ID: {} ", eventId);
+    LOG_F( INFO, "Broadcast even with ID: %d ", eventId);
+
     for(auto&& observer : gObserversMap[eventId])
     {
         observer.functor(eventParams);
-        LOG_MACRO( bbt::logLevel::trace, "\tCalled: {}", observer.functorName);
+        LOG_F( INFO, "\tCalled: %s", observer.functorName);
     }
 
 }
