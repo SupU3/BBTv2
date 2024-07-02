@@ -5,7 +5,7 @@ void internarAssertImplemmentation(const char* expresion, const char* desc, cons
 {
 
     // DO THING...
-    LOG_F(ERROR,
+    BBT_LOG(ERROR,
         "\n  -+-+-+-+-+-+-+-+-+-+-+-+-+-\n"
         "  [expr]:        %s\n"
         "  [file]:        %s\n"
@@ -13,5 +13,4 @@ void internarAssertImplemmentation(const char* expresion, const char* desc, cons
         "  [line]:        %d\n"
         "  [description]: %s\n"
         "  -+-+-+-+-+-+-+-+-+-+-+-+-+-", expresion, file, function, line, desc);
-
 }

@@ -1,7 +1,5 @@
 #ifndef __BBT_ASSERT_H__
 #define __BBT_ASSERT_H__ 1
-#include <string>
-#include <format>
 
 #ifdef DEBUG
 #define BBT_DEBUGBREAK __debugbreak
