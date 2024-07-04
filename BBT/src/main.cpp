@@ -9,6 +9,8 @@
 #include "bbt_event_system.h"
 #include "loguru.hpp"
 
+#include <boost/asio.hpp>
+
 int main(int argc, char** argv)
 {
     std::cout << "\033[36m"; // Establecer el color azul

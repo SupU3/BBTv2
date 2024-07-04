@@ -4,3 +4,6 @@
 [submodule "BBT/deps/loguru"]
 	path = BBT/deps/loguru
 	url = https://github.com/emilk/loguru.git
+[submodule "BBT/deps/boost"]
+	path = BBT/deps/boost
+	url = https://github.com/boostorg/boost.git
