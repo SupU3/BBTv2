@@ -9,6 +9,8 @@
 #include "bbt_event_system.h"
 #include "loguru.hpp"
 
+#include <boost/asio.hpp>
+
 int main(int argc, char** argv)
 {
     std::cout << "\033[36m"; // Establecer el color azul
@@ -39,7 +41,7 @@ int main(int argc, char** argv)
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG); // Always required on Mac
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 6);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
 
     // Enable native IME.
     SDL_SetHint(SDL_HINT_IME_SHOW_UI, "1");
