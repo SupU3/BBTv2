@@ -65,6 +65,9 @@ namespace olc
 				// Obtenemos la posición del finla del vector donde empieza el mensaje.
 				size_t i = msg.body.size() - sizeof(DataType);
 
+				// Copiamos físicamente los datos desde el vector dentro de la variable del usuario.
+				std::memcpy(&data, msg.body.data() + i, sizeof(DataType));
+
 				// Reduce el vector para eliminar los bytes de lectura y resetear la posición.
 				msg.body.resize(i);
 

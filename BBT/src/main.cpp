@@ -213,7 +213,6 @@ int main(int argc, char** argv)
         glClear(GL_COLOR_BUFFER_BIT);
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
         SDL_GL_SwapWindow(window);
-
     }
 
     ImGui_ImplOpenGL3_Shutdown();

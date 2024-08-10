@@ -183,7 +183,7 @@ namespace olc
 			boost::asio::ip::tcp::acceptor m_asioAcceptor;
 
 			// Los clientes tendrán un identificador único dentro del sistema, así evitamos usar su ip y mandarla a otros clientes. 
-			uint32_t nIDCounter = 42069;
+			uint32_t nIDCounter = 10000;
 
 
 

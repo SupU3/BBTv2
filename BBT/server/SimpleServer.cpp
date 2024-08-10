@@ -54,7 +54,6 @@ protected:
 			msg.header.id = CustomMsgTypes::ServerMessage;
 			msg << client->GetID();
 			MessageAllClients(msg, client);
-
 		}
 		break;
 		}
