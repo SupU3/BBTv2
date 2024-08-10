@@ -10,7 +10,7 @@ file(GLOB_RECURSE SOURCES "src/*.cpp" "src/*.h")
 
 # Include directories
 include_directories(src)
-
+include_directories(server)
 
 add_subdirectory(deps/SDL)
 add_subdirectory(deps/loguru)

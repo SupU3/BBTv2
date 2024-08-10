@@ -1,5 +1,5 @@
 # Add source files
-file(GLOB_RECURSE SOURCES "*.cpp")
+file(GLOB_RECURSE SOURCES "*.cpp" "*.h")
 
 # Add the executable
 add_executable(BBTServer ${SOURCES})
