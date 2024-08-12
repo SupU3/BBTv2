@@ -71,7 +71,7 @@ namespace olc
 								// Si no la denegamos, la añadimos a la cola de conexiones.
 								m_deqConnections.push_back(std::move(newconn));
 
-								m_deqConnections.back()->ConnectToClient(nIDCounter++);
+								m_deqConnections.back()->ConnectToClient(this,nIDCounter++);
 
 								std::cout << "[" << m_deqConnections.back()->GetID() << "] Connection Approved\n";
 
@@ -167,6 +167,13 @@ namespace olc
 			virtual void OnMessage(std::shared_ptr<connection<T>> client, message<T>& msg)
 			{
 				
+			}
+
+		public:
+			// Se llama al validar un cliente.
+			virtual void OnClientValidated(std::shared_ptr<connection<T>> client)
+			{
+
 			}
 
 		protected:
